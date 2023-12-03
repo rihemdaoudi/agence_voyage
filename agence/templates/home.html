@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Acceuil{% endblock %}
+{% block content %}
+<div class="container mt-5 mb-5">
+    <h3 class="mb-3">Venez réserver vos vacances chez nous, la meilleure agence sur la toute la Tunisie !</h3>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card shadow" style="width: 18rem;">
+                {% load static %}
+                <img src="{% static 'images/Marhaba_Club_5.jpg' %}" class="card-img-top" alt="images/Marhaba_Club_5.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lepoint.fr%2Fhotels%2Fluxe-cinq-hotels-pour-s-evader-en-corse-21-06-2023-2525523_501.php&psig=AOvVaw3SdnujZC4QVpVFcCO-jKk1&ust=1701123903194000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDDjcPa4oIDFQAAAAAdAAAAABA3" class="card-img-top" alt="...">
+                <div class="card-body shadow">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="images">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}
