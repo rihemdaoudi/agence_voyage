@@ -1,16 +1,16 @@
-<!doctype html>
+<DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title> Room List </title>
+        <title> Book a room </title>
     </head>
     <body>
-        {% for room in room_list%}
-        <h2>{{room}}</h2>
-        {% endfor %}
-        
-
+        <form action="" method ="POST">
+                {{form.as_p}}
+                {% csrf_token %}
+                <button type="submit">Book room </button>
+        </form>
     </body>
 </html>
